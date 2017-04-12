@@ -1,3 +1,3 @@
 #!/bin/bash
-./includes/test.sh
-#./includes/main.sh
+#./includes/test.sh
+./includes/main.sh
