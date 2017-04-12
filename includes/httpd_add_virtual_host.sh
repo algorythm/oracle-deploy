@@ -65,3 +65,10 @@ while true; do
         * ) systemctl enable httpd; systemctl enable tomcat; echo "Restarted apache."break;;
     esac
 done
+
+# To fix the SELinux Shit:
+#chcon -R -h -t httpd_sys_script_exec_t /var/html/error.log    # Should be added in the master template
+#chcon -R -h -t httpd_sys_script_exec_t /var/html/requests.log # Should be added in the master template
+chcon -R -h -t httpd_sys_script_exec_t /etc/httpd/sites-available/002-$1.conf
+chcon -R -h -t httpd_sys_script_exec_t /home/oracle/Oracle/Middleware12c/ofr1/user_projects/domains/SBErpc12/config/fmwconfig/components/ReportsServerComponent/reports_ohs.conf
+chcon -R -h -t httpd_sys_script_exec_t /home/oracle/Oracle/Middleware12c/ofr1/user_projects/domains/SBErpc12/config/fmwconfig/components/FORMS/instances/forms1/server/forms.conf

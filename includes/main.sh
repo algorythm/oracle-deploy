@@ -25,10 +25,16 @@ echo "Setting up virtual host in WLS..."
 ./includes/change_vhost_wls.sh "$fqdn"
 echo "Configuring ORDS..."
 ./includes/configure_ords.sh
+
 echo "Retrieving SSL certificates using Certbot from Lets Encrypt..."
 /opt/certbot/certbot-auto certonly -n -d $fqdn
 echo "Setting up cron job to update SSL certificates"
 echo 30 5 * * * /opt/certbot/certbot-auto -n renew --post-hook "systemctl reload httpd"
+
+# To fix the SELinux Shit:
+chcon -R -h -t httpd_sys_script_exec_t /etc/letsencrypt/live/$fqdn/privkey.pem
+chcon -R -h -t httpd_sys_script_exec_t /etc/letsencrypt/live/$fqdn/fullchain.pem
+
 echo "Creating virtual hosts for apache..."
 ./includes/httpd_add_virtual_host.sh "$fqdn"
 

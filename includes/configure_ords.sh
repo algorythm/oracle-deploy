@@ -48,3 +48,5 @@ END
 chown -R tomcat:tomcat /home/tomcat
 ln -s /home/ordstomcat/ords.war /usr/share/tomcat/webapps/
 
+# To fix the SELinux Shit:
+chcon -R -h -t httpd_sys_script_exec_t /usr/share/tomcat/webapps/ords.war
