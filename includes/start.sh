@@ -1,2 +1,2 @@
 #!/bin/bash
-./test.sh
+./includes/test.sh
