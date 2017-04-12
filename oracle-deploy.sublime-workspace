@@ -1,0 +1,223 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 113.0,
+		"last_filter": "package control install",
+		"selected_items":
+		[
+			[
+				"package control install",
+				"Package Control: Install Package"
+			],
+			[
+				"package control install ",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 440.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/AndersWOlsen/Documents/GitHub/SoftBASE/oracle-deploy"
+	],
+	"file_history":
+	[
+		"/C/Users/AndersWOlsen/Desktop/Docker Test/Dockerfile",
+		"/C/Users/AndersWOlsen/Desktop/Docker Test/index.html",
+		"/C/Users/AndersWOlsen/Google Drive/Uddannelse/DTU/2. Semester/Algoritmer og Datastrukturer/CodeJudge/M-1.py",
+		"/C/Users/AndersWOlsen/Documents/Curse/Minecraft/Instances/The Black Darkness/modpack/default/scripts/normal.zs",
+		"/C/Users/AndersWOlsen/Downloads/The Black Darkness-1.0/overrides/modpack/default/scripts/normal.zs",
+		"/C/Users/AndersWOlsen/Google Drive/Uddannelse/DTU/2. Semester/Algoritmer og Datastrukturer/CodeJudge/M-1.Toppunkt3.py",
+		"/C/Users/AndersWOlsen/Google Drive/Uddannelse/DTU/2. Semester/Algoritmer og Datastrukturer/CodeJudge/M-1.Toppunkt2.py",
+		"/C/Users/AndersWOlsen/Google Drive/Uddannelse/DTU/2. Semester/Algoritmer og Datastrukturer/CodeJudge/M-1.Toppunkt1.py",
+		"/C/Users/AndersWOlsen/Desktop/Docker Test/src/index.html",
+		"/C/Users/AndersWOlsen/Desktop/Docker Test/nginx.conf",
+		"/C/Users/AndersWOlsen/Google Drive/Uddannelse/DTU/2. Semester/F17 DTU Studiegruppe - Hold 12/F17 Netværkspraktik _ Datakommunikation/Gruppe B/mikrotik-setup.part1.txt",
+		"/C/Users/AndersWOlsen/Downloads/tbd-server/settings.sh",
+		"/C/Users/AndersWOlsen/Downloads/tbd-server/whitelist.json",
+		"/C/Users/AndersWOlsen/Downloads/tbd-server/server.properties",
+		"/C/Users/AndersWOlsen/Downloads/tbd-server/ops.json",
+		"/C/Users/AndersWOlsen/Documents/GitHub/Homestead/scripts/homestead.rb",
+		"/C/Users/AndersWOlsen/Downloads/Constant.java",
+		"/C/Users/AndersWOlsen/Downloads/Connector.java",
+		"/C/Users/AndersWOlsen/Downloads/tbd-server/ServerStart.sh",
+		"/C/Users/AndersWOlsen/.homestead/Homestead.yaml",
+		"/C/Windows/system32/drivers/etc/hosts",
+		"/C/Users/AndersWOlsen/Desktop/dtu-login/index.html",
+		"/C/Users/AndersWOlsen/Desktop/dtu-login/remove-user.html",
+		"/C/Users/AndersWOlsen/Desktop/dtu-login/create-user.html",
+		"/C/Users/AndersWOlsen/Desktop/dtu-login/admin.html",
+		"/C/Users/AndersWOlsen/Desktop/dtu-login/login.html",
+		"/C/Users/AndersWOlsen/Documents/GitHub/DTU/CDIO_del2/src/controller/MainController.java",
+		"/C/Users/AndersWOlsen/Desktop/CDIO_del2/Source/IntelliJ/Weight Simulator 2017 v1.0/.travis.yml",
+		"/F/Support/Windows/Registry/add_scp_path.reg",
+		"/C/Users/AndersWOlsen/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/AndersWOlsen/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/F/Support/Windows/Registry/right_click_sublime.bat",
+		"/C/Users/AndersWOlsen/Desktop/test.py",
+		"/C/Users/AndersWOlsen/Desktop/mdtopdf.md",
+		"/C/Users/AndersWOlsen/Desktop/some_template.latex",
+		"/C/Users/AndersWOlsen/Google Drive/Uddannelse/DTU/2. Semester/Algoritmer og Datastrukturer/assignment-template.tex"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"create",
+			"theme",
+			"public",
+			"import",
+			"public",
+			"import"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "oracle-deploy.sublime-project",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 316.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
