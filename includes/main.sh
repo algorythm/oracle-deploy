@@ -8,9 +8,9 @@ echo " 3 - reconfigure ords"
 while true; do
     read -p "Choice: " choice
     case $choice in
-        [1]* ) echo "full config" break;;
-		[2]* ) echo "ords config" break;;
-		[3]* ) echo "reconfgire ords" break;;
+        [1]* ) echo "full config"; break;;
+		[2]* ) echo "ords config"; break;;
+		[3]* ) echo "reconfgire ords"; break;;
         * ) echo "Select one of the possibilities!";
     esac
 done
