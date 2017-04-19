@@ -45,8 +45,13 @@ $db_pwd
 2
 END
 
+while true; do
+    read -p "Configure RESTful [Y/n]? " yn
+    case $yn in
+        [Nn]* ) exit; break;;
+        * ) ./includes/configure_restful.sh $db_pwd;break;;
+    esac
+done
+
 chown -R tomcat:tomcat /home/tomcat
 ln -s /home/ordstomcat/ords.war /usr/share/tomcat/webapps/
-
-# To fix the SELinux Shit:
-chcon -R -h -t httpd_sys_script_exec_t /usr/share/tomcat/webapps/ords.war

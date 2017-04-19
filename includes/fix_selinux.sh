@@ -1,4 +1,7 @@
 #!/bin/bash
+echo "Fixing SELinux for ords.war in tomcat"
+chcon -R -h -t httpd_sys_script_exec_t /usr/share/tomcat/webapps/ords.war
+
 echo "Fixing SELinux for certbot keys"
 chcon -R -h -t httpd_sys_script_exec_t /etc/letsencrypt/live/$1/privkey.pem
 chcon -R -h -t httpd_sys_script_exec_t /etc/letsencrypt/live/$1/fullchain.pem
@@ -12,5 +15,5 @@ echo "Fixing SELinux for /var/www/html and /var/www/html/public"
 chcon -R -h -t httpd_sys_rw_content_t /var/www/html/public
 chcon -R -h -t httpd_sys_rw_content_t /var/www/html
 
-echo "Fixing  SELinux proxy to 127.0.0.1:8080"
+echo "Fixing SELinux proxy to 127.0.0.1:8080"
 /usr/sbin/setsebool -P httpd_can_network_connect 1
