@@ -55,7 +55,7 @@ done
 
 mv tomcatconfig/ords/defaults.xml tomcatconfig/ords/defaults.xml.org
 sed '/<\/properties>/{ 
-	r /home/root/test-xml.txt 
+	r /root/scripts/oracle-deploy/template_files/force-ssl.xml 
 	a \</properties> 
 	d
 }' tomcatconf/ords/defaults.xml >> tomcatconf/ords/defaults.xml
