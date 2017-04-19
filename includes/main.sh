@@ -3,7 +3,7 @@ echo "Choose one of the following possibilities:"
 echo " 1 - full configuration"
 echo " 2 - only ords configuration"
 echo " 3 - reconfigure ords (test)"
-ëcho " q - exit"
+echo " q - exit"
 
 
 while true; do
