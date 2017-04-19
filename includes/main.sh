@@ -1,10 +1,9 @@
 #!/bin/bash
 echo "Choose one of the following possibilities:"
-echo " 1 - full configuration"
-echo " 2 - only ords configuration"
-echo " 3 - reconfigure ords (test)"
-echo " q - exit"
-
+echo " 1 - Full Configuration"
+echo " 2 - Only ORDS Configuration"
+echo " 3 - Reconfigure ORDS"
+echo " q - Exit"
 
 while true; do
     read -p "Choice: " choice
@@ -16,4 +15,3 @@ while true; do
         * ) echo "Select one of the possibilities!";
     esac
 done
-
