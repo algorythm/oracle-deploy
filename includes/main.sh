@@ -29,11 +29,16 @@ echo "Configuring ORDS..."
 echo "Retrieving SSL certificates using Certbot from Lets Encrypt..."
 /opt/certbot/certbot-auto certonly -n -d $fqdn
 echo "Setting up cron job to update SSL certificates"
-echo 30 5 * * * /opt/certbot/certbot-auto -n renew --post-hook "systemctl reload httpd"
+mkdir /root/certbot-log
+echo "30 5 * * * /opt/certbot/certbot-auto -n renew --post-hook \"systemctl reload httpd\" >> /root/certbot-log/renew.log" >> /etc/crontab
 
 # To fix the SELinux Shit:
+echo "Fixing SELinux for certbot keys"
 chcon -R -h -t httpd_sys_script_exec_t /etc/letsencrypt/live/$fqdn/privkey.pem
 chcon -R -h -t httpd_sys_script_exec_t /etc/letsencrypt/live/$fqdn/fullchain.pem
+
+echo "Restarting httpd"
+systemctl restart httpd
 
 echo "Creating virtual hosts for apache..."
 ./includes/httpd_add_virtual_host.sh "$fqdn"
