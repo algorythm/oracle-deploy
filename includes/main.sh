@@ -10,7 +10,8 @@ while true; do
     case $choice in
         [1]* ) echo ./includes/full-config.sh break;;
 		[2]* ) echo ./includes/ords.sh break;;
-		[3]* ) echo ./includes/test.sh break;;
+		[3]* ) echo ./includes/test.sh; break;;
+		[4]* ) echo "Exiting..."; break;;
         * ) echo "Select one of the possibilities!";
     esac
 done
