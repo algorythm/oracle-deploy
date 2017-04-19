@@ -53,5 +53,12 @@ while true; do
     esac
 done
 
+mv tomcatconfig/ords/defaults.xml tomcatconfig/ords/defaults.xml.org
+sed '/<\/properties>/{ 
+	r /home/root/test-xml.txt 
+	a \</properties> 
+	d
+}' tomcatconf/ords/defaults.xml >> tomcatconf/ords/defaults.xml
+
 chown -R tomcat:tomcat /home/tomcat
 ln -s /home/ordstomcat/ords.war /usr/share/tomcat/webapps/
