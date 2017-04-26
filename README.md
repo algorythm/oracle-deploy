@@ -17,7 +17,21 @@ It is important that external DNS has been set before hand.
 
 Make sure that the server can ping the database server.
 
-Make sure that the firewall allows port 80/tcp and 443/tcp to the server.
+Make sure that the firewall allows port 80/tcp and 443/tcp to the server. It can be checked with nmap:
+
+`nmap -p 443 <ip-address>`
+
+If it is filtered, the internal firewall might be blocking it. Open it with the firewall cmd:
+
+`firewall-cmd --zone=public --permanent --add-service=https`
+
+To list the firewall rules, use:
+
+`firewall-cmd --zone=public --permanent --list-services`
+
+A port can also be added manually:
+
+`firewall-cmd --zone=public --add-port=8090/tcp`
 
 When everything is set up as it should be, execute the following command:
 
