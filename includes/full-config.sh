@@ -10,7 +10,7 @@ echo "Configuring ORDS..."
 ./includes/configure_ords.sh
 
 echo "Retrieving SSL certificates using Certbot from Lets Encrypt..."
-/opt/certbot/certbot-auto certonly --standalone -d $fqdn
+/opt/certbot/certbot-auto certonly --standalone -d $fqdn --email support@softbase.dk --agree-tos
 echo "Setting up cron job to update SSL certificates"
 mkdir /root/certbot-log
 echo "30 5 * * * /opt/certbot/certbot-auto -n renew --post-hook \"systemctl reload httpd\" >> /root/certbot-log/renew.log" >> /etc/crontab
